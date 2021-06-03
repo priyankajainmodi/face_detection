@@ -1,11 +1,12 @@
 import cv2
 
 #to make a cascade classifier object which contains all the face  features
-face_cascade=cv2.CascadeClassifier("C:\\Users\\priya\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
+face_cascade=cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 #arg is  path to xml file which contains face features on basis of which face is detected
 
 #reads or processes our img into 3 rgb matrix
 img=cv2.imread("multi_face.jpg",1)
+print(img)
 
 
 #cvt-convert;this cvtcolor func converts our image to a specifed color;here we convert our image to gray
